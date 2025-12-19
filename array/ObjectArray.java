@@ -1,0 +1,42 @@
+class student
+{
+    int rollno;
+    String name;
+    int mark;
+}
+
+
+
+public class ObjectArray
+{
+    public static void main(String args[])
+    {
+        student s1= new student();
+        s1.rollno=1;
+        s1.name= "subarth";
+        s1.mark=99;
+
+        student s2= new student();
+        s2.rollno=2;
+        s2.name="naveen";
+        s2.mark=88;
+
+        student s3= new student();
+        s3.rollno=3;
+        s3.name="ram";
+        s3.mark=59;
+
+
+        student students[]= new student[3];
+        students[0]=s1;
+        students[1]=s2;
+        students[2]=s3;
+
+
+        for(student stud: students)
+        {
+            System.out.println(stud.rollno+ " : " + stud.name + ":"+ stud.mark );
+        }
+
+    }
+}
